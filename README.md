@@ -8,7 +8,8 @@ This project focuses on developing a lightweight Convolutional Neural Network (C
 * **Preprocessing:** Images were resized to 224x224 (RGB) and normalized to a [0, 1] range.
 * **Data Augmentation:** Techniques such as shifting, rotating, flipping, and shearing were applied to improve model robustness.
 * **Optimization Techniques:** The training process utilized Early Stopping, Model Checkpointing, Label smoothing, Learning Rate Scheduling, and Fine-Tuning.
-##Daatset
+
+## Datset
 <p align="center">
   <img src="reports/sample.png" width="600" alt="Geometry Report">
 </p>
