@@ -17,13 +17,13 @@ After applying identical preprocessing and optimization settings, the MobileNetV
 
 | Metric | Custom CNN Model | MobileNetV2 |
 | :--- | :--- | :--- |
-| **Parameters** | 3.5 M[cite: 3] | 2.4 M[cite: 3] |
-| **Accuracy** | 78.53%[cite: 3] | 80.41%[cite: 3] |
-| **Precision** | 78.55%[cite: 3] | 80.57%[cite: 3] |
-| **Recall** | 78.61%[cite: 3] | 80.48%[cite: 3] |
-| **F1 Score** | 78.53%[cite: 3] | 80.48%[cite: 3] |
-| **Inference Time** | ~0.13 s[cite: 3] | ~0.11 s[cite: 3] |
-| **Model Size** | 41.02 MB[cite: 3] | 28.15 MB[cite: 3] |
+| **Parameters** | 3.5 M | 2.4 M |
+| **Accuracy** | 78.53% | 80.41% |
+| **Precision** | 78.55% | 80.57% |
+| **Recall** | 78.61% | 80.48% |
+| **F1 Score** | 78.53% | 80.48% |
+| **Inference Time** | ~0.13 s | ~0.11 s |
+| **Model Size** | 41.02 MB | 28.15 MB |
 
 *Note: The MobileNetV2 model achieved a lower GPU latency of 65.5 ms compared to the CNN's 105.39 ms, demonstrating its suitability for embedded systems[cite: 3].*
 
