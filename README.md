@@ -12,6 +12,10 @@ This project focuses on developing a lightweight Convolutional Neural Network (C
 ## Model Architecture
 The core of the optimized model is based on **MobileNetV2**, which utilizes depthwise separable convolutions[cite: 3]. This approach applies one filter per input channel (depthwise convolution) and then mixes them using 1x1 convolutions (pointwise convolution), significantly reducing computational cost. 
 
+<p align="center">
+  <img src="reports/Architecture.png" width="600" alt="Geometry Report">
+</p>
+
 ## Performance and Results
 After applying identical preprocessing and optimization settings, the MobileNetV2 model (using an alpha of 0.75 and 224x224 resolution) outperformed a custom baseline CNN (48x48 resolution) across all key metrics. 
 
