@@ -8,28 +8,35 @@ This project focuses on developing a lightweight Convolutional Neural Network (C
 * **Preprocessing:** Images were resized to 224x224 (RGB) and normalized to a [0, 1] range.
 * **Data Augmentation:** Techniques such as shifting, rotating, flipping, and shearing were applied to improve model robustness.
 * **Optimization Techniques:** The training process utilized Early Stopping, Model Checkpointing, Label smoothing, Learning Rate Scheduling, and Fine-Tuning.
+##Daatset
+<p align="center">
+  <img src="reports/sample.png" width="600" alt="Geometry Report">
+</p>
 
 ## Model Architecture
 The core of the optimized model is based on **MobileNetV2**, which utilizes depthwise separable convolutions[cite: 3]. This approach applies one filter per input channel (depthwise convolution) and then mixes them using 1x1 convolutions (pointwise convolution), significantly reducing computational cost. 
 
 <p align="center">
+  <img src="reports/Mob_architecture.png" width="600" alt="Geometry Report">
   <img src="reports/Architecture.png" width="600" alt="Geometry Report">
 </p>
 
 ## Performance and Results
 After applying identical preprocessing and optimization settings, the MobileNetV2 model (using an alpha of 0.75 and 224x224 resolution) outperformed a custom baseline CNN (48x48 resolution) across all key metrics. 
 
-| Metric | Custom CNN Model | MobileNetV2 |
-| :--- | :--- | :--- |
-| **Parameters** | 3.5 M | 2.4 M |
-| **Accuracy** | 78.53% | 80.41% |
-| **Precision** | 78.55% | 80.57% |
-| **Recall** | 78.61% | 80.48% |
-| **F1 Score** | 78.53% | 80.48% |
-| **Inference Time** | ~0.13 s | ~0.11 s |
-| **Model Size** | 41.02 MB | 28.15 MB |
+<p align="center">
+  <img src="reports/Confusion matrix.png" width="600" alt="Geometry Report">
+  <img src="reports/Conparion.png" width="600" alt="Geometry Report">
+</p>
 
 *Note: The MobileNetV2 model achieved a lower GPU latency of 65.5 ms compared to the CNN's 105.39 ms, demonstrating its suitability for embedded systems.*
+
+## Output
+
+<p align="center">
+  <img src="reports/ouput.png" width="600" alt="Geometry Report">
+</p>
+
 
 ## Future Work
 Future iterations of this project will explore other lightweight architectures, such as EfficientNet or ShuffleNet, to evaluate potential performance gains.
