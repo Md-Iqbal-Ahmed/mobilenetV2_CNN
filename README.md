@@ -1,7 +1,7 @@
 # Lightweight MobileNetV2-Based CNN for Facial Expression Recognition
 
 ## Overview
-This project focuses on developing a lightweight Convolutional Neural Network (CNN) for facial expression recognition, optimized for real-time applications on mobile and edge devices[cite: 3]. By leveraging the MobileNetV2 architecture, the model improves accuracy and efficiency, particularly when working with diverse and low-quality datasets.
+This project focuses on developing a lightweight Convolutional Neural Network (CNN) for facial expression recognition, optimized for real-time applications on mobile and edge devices. By leveraging the MobileNetV2 architecture, the model improves accuracy and efficiency, particularly when working with diverse and low-quality datasets.
 
 ## Methodology
 * **Dataset:** The FER2013 dataset was used, specifically focusing on four emotion classes: Angry, Happy, Sad, and Neutral.
